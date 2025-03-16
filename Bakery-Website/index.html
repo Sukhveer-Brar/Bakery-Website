@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"> 
+    />
+   
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-solid fa-cake-candles"></i></i>bakery</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#product">product</a>
+        <a href="#gallery">gallery</a>
+
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+      </nav>
+      <div class="icons">
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+
+<!-- SHOPPING CART -->
+
+<div class="cart-items-container">
+  <div id="close-form" class="fas fa-times"></div>
+  <h3 class="title">checkout</h3>
+
+ <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="images/cart-1.jpg" alt="">
+    <div class="content">
+      <h3> bakery item 1</h3>
+      <div class="price">$45.99/-</div>
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="images/cart-2.jpg" alt="">
+    <div class="content">
+      <h3> bakery item 2</h3>
+      <div class="price">$19.99/-</div>
+    </div>
+  </div>
+
+  <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="images/cart-3.jpg" alt="">
+    <div class="content">
+      <h3> bakery item 3</h3>
+      <div class="price">$29.99/-</div>
+    </div>
+  </div>
+
+  <a href="#" class="btn">checkout</a>
+</div>
+
+
+<!-- HOME -->
+
+<section class="home" id="home">
+  <div class="swiper home-slider">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide" style="background: url(images/slider-1.jpg) no-repeat;">
+        <div class="content">
+          <h3>Baking Joy into Every Creation</h3>
+          <a href="#" class="btn">get started</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide" style="background: url(images/slider-2.jpg) no-repeat;">
+        <div class="content">
+          <h3>we bake the world a better place</h3>
+          <a href="#" class="btn">get started</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide" style="background: url(images/slider-3.jpg) no-repeat;">
+        <div class="content">
+          <h3>Baking Beyond Boundaries</h3>
+          <a href="#" class="btn">get started</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+</section>
+
+<!-- ABOUT US -->
+
+<section class="about" id="about">
+  <h1 class="heading">
+    <span>about</span> us
+  </h1>
+
+  <div class="row">
+    <div class="image">
+      <img src="images/about.jpg" alt="">
+    </div>
+
+    <div class="content">
+      <h3>good things come to those <span>who bake</span> for others</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nam omnis saepe libero maxime suscipit tempore culpa tempora beatae soluta.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum quis fugit illo reprehenderit suscipit Laborum nam omnis saepe libero maxime tempore culpa beatae minima voluptates.</p>
+    <a href="#" class="btn">read more</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- PRODUCT -->
+
+<section class="product" id="product">
+ <h1 class="heading text">our <span> products</span></h1>
+
+
+  <div class="box-container swiper">
+    <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+        <img src="images/product-1.jpg" alt="" class="card-image">
+          <h3>Maple Bacon</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span class="price">$11.99</span>
+          <a href="#" class="btn card-btn">add to cart</a>
+         </li>
+
+      <li class="card-item swiper-slide">
+       <img src="images/product-2.jpg" alt="" class="card-image">
+        <h3>Pastries</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <span class="price">$11.99</span>
+        <a href="#" class="btn card-btn">add to cart</a>
+    </li>
+
+    <li class="card-item swiper-slide">
+      <img src="images/product-3.jpg" alt="" class="card-image">
+      <h3>Bagels</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <span class="price">$11.99</span>
+      <a href="#" class="btn card-btn">add to cart</a>
+ </li>
+
+  <li class="card-item swiper-slide">
+   <img src="images/product-4.jpg" alt="" class="card-image">
+    <h3>Burgers</h3>
+    <div class="stars">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+    </div>
+    <span class="price">$11.99</span>
+    <a href="#" class="btn card-btn">add to cart</a>
+</li>
+
+<li class="card-item swiper-slide">
+  <img src="images/product-5.jpg" alt="" class="card-image">
+  <h3>Rainbow Cake</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <span class="price">$11.99</span>
+  <a href="#" class="btn card-btn">add to cart</a>
+</li>
+
+<li class="card-item swiper-slide">
+  <img src="images/product-6.jpg" alt="" class="card-image">
+  <h3>Pan Cakes</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <span class="price">$11.99</span>
+  <a href="#" class="btn card-btn">add to cart</a>
+</li>
+
+
+<li class="card-item swiper-slide">
+  <img src="images/product-7.jpg" alt="" class="card-image">
+  <h3>Birthday Cake</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <span class="price">$11.99</span>
+  <a href="#" class="btn card-btn">add to cart</a>
+</li>
+
+
+<li class="card-item swiper-slide">
+  <img src="images/product-8.jpg" alt="" class="card-image">
+  <h3>Cookies</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <span class="price">$11.99</span>
+  <a href="#" class="btn card-btn">add to cart</a>
+</li>
+
+
+<li class="card-item swiper-slide">
+  <img src="images/product-9.jpg" alt="" class="card-image">
+  <h3>Cakes</h3>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <span class="price">$11.99</span>
+  <a href="#" class="btn card-btn">add to cart</a>
+</li>
+</ul>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-slide-button swiper-button-prev"></div>
+  <div class="swiper-slide-button swiper-button-next"></div>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading">our <span> gallery</span></h1>
+
+  <div class="gallery-container">
+    <a href="images/gallery-1.jpg" class="box">
+    <img src="images/gallery-1.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-2.jpg" class="box">
+    <img src="images/gallery-2.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-3.jpg" class="box">
+    <img src="images/gallery-3.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+ 
+
+  <a href="images/gallery-4.jpg" class="box">
+    <img src="images/gallery-4.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-5.jpg" class="box">
+    <img src="images/gallery-5.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-6.jpg" class="box">
+    <img src="images/gallery-6.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+
+  <a href="images/gallery-7.jpg" class="box">
+    <img src="images/gallery-7.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-8.jpg" class="box">
+    <img src="images/gallery-8.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+
+
+  <a href="images/gallery-9.jpg" class="box">
+    <img src="images/gallery-9.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+
+  <a href="images/gallery-10.jpg" class="box">
+    <img src="images/gallery-10.jpg" alt="">
+    <div class="icons"><i class="fas fa-plus"></i></div>
+  </a>
+  </div>
+</section>
+
+<!-- WEEKLY PROMOTIONS -->
+
+<section class="promotion">
+
+  <h1 class="heading">weekly <span> promotions</span></h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <div class="content">
+        <h3>chocolate cake</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ea assumenda earum.</p>
+      </div>
+      <img src="images/promotion-1.jpg" alt="">
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <h3>nut cake</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ea assumenda earum, itaque magnam.</p>
+      </div>
+      <img src="images/promotion-2.jpg" alt="">
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+
+<!-- REVIEW -->
+
+<section class="review" id="review">
+  <h1 class="heading">customer's <span> review</span></h1>
+
+  <div class="box-container">
+    <div class="box">
+      <img src="images/review-1.jpg" class="user" alt="">
+      <h3>lucy deo</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam alias commodi error, laboriosam magni a quisquam? Beatae.</p>
+    </div>
+
+    <div class="box">
+      <img src="images/review-2.jpg" class="user" alt="">
+      <h3>david mathew</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iusto animi perferendis commodi a cumque eveniet natus assumenda quaerat fugiat.</p>
+    </div>
+
+    <div class="box">
+      <img src="images/review-3.jpg" class="user" alt="">
+      <h3>nancy </h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iusto animi perferendis commodi a cumque eveniet natus assumenda quaerat fugiat.</p>
+    </div>
+
+    
+    <div class="box">
+      <img src="images/review-4.jpg" class="user" alt="">
+      <h3>kia </h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iusto animi perferendis commodi a cumque eveniet natus assumenda quaerat fugiat.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PARALLAX -->
+
+<section class="parallax">
+
+  <h1 class="heading">visit<span> us</span></h1>
+
+  <div class="box-container">
+
+
+    
+<div class="box">
+  <div class="content">
+    <p>discover the best bakery product, we look <br>forword to your visit.</p>
+    <a href="#" class="btn">see location</a>
+  </div>
+
+</div>
+ </div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+<h1 class="heading"><span>order</span> now</h1>
+
+<div class="row">
+
+  <div class="image">
+    <img src="images/order.gif" alt="">
+  </div>
+
+  <form action="">
+
+    <div class="inputBox">
+      <input type="text" placeholder="first name">
+      <input type="text" placeholder="last name">
+    </div>
+
+    <div class="inputBox">
+      <input type="email" placeholder="email address">
+      <input type="number" placeholder="phone number">
+    </div>
+
+    <div class="inputBox">
+      <input type="text" placeholder="food name">
+      <input type="number" placeholder="how much">
+    </div>
+
+<textarea placeholder="your address" name="" id="" cols="30" rows="10"></textarea>
+<input type="submit" value="order now" class="btn">
+  </form>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+
+  <div class="box-container">
+    <div class="box">
+      <h3>address</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptates tempora sint esse.</p>
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+    </div>
+     </div>
+
+<div class="box">
+  <h3>E-mail</h3>
+  <a href="#" class="link">sukhveerabc@gmail.com</a>
+  <a href="#" class="link">sukhveerabc1@gmail.com</a>
+</div>
+
+<div class="box">
+  <h3>call us</h3>
+  <p>+1 (428) 397 4567</p>
+  <p>+1 (478) 397 4568</p>
+</div>
+
+<div class="box">
+  <h3>opening hours</h3>
+  <p>Monday - Friday 9:00 - 23:00 <br> Saturday 8:00 - 24:00</p>
+</div>
+
+  </div>
+
+  <div class="credit">created by <span> Sukhveer Brar</span> all rights reserved!</div>
+</section>
+<!-- Link Swipper Script -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+  </body>
+</html>
